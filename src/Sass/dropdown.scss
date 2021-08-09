@@ -1,0 +1,60 @@
+// Core
+
+.filter-drop-down {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 225px;
+  justify-content: flex-end;
+}
+
+.drop-down-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.drop-down-list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 110%;
+  width: 100%;
+  background-color: $white;
+  border-radius: 5px;
+  font-size: $font-size-base-xs;
+  box-shadow: 0 2px 7px $light-input;
+  padding: ($spacer / 2) 0;
+
+  button {
+    text-align: left;
+    padding: ($spacer / 2.5) ($spacer * 1.5);
+
+    &:hover {
+      background-color: rgba($light-gray, 0.5);
+    }
+  }
+}
+
+.btn.drop-down-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  border-radius: 5px;
+  font-size: $font-size-base-xs;
+  box-shadow: 0 2px 7px $light-gray;
+  padding: ($spacer) ($spacer * 1.5);
+  width: 100%;
+  background-color: $white;
+
+  &:hover {
+    background-color: rgba($light-gray, 0.3);
+    outline: 2px solid $light-gray;
+  }
+
+  &:focus {
+    outline: 2px solid $light-input;
+    border-radius: 5px;
+  }
+}

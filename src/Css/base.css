@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;600;800&display=swap");
+.filter-drop-down {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 225px;
+  justify-content: flex-end;
+}
+
+.drop-down-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.drop-down-list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 110%;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 7px #858585;
+  padding: 0.5rem 0;
+}
+.drop-down-list button {
+  text-align: left;
+  padding: 0.4rem 1.5rem;
+}
+.drop-down-list button:hover {
+  background-color: rgba(237, 237, 237, 0.5);
+}
+
+.btn.drop-down-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 7px #ededed;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  background-color: white;
+}
+.btn.drop-down-btn:hover {
+  background-color: rgba(237, 237, 237, 0.3);
+  outline: 2px solid #ededed;
+}
+.btn.drop-down-btn:focus {
+  outline: 2px solid #858585;
+  border-radius: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #202c37;
+  line-height: 1.5;
+  font-weight: 600;
+  color: white;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+b {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 7px #111517;
+  padding: 1rem 1rem 1rem 3.5rem;
+}
+input:focus {
+  outline: 2px solid #2b3945;
+  border-radius: 5px;
+}
+
+.btn {
+  cursor: pointer;
+  background: none;
+  color: white;
+  padding: 1rem 0;
+}
+.btn.back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2b3945;
+  padding: 0.4rem 1.5rem;
+  width: 120px;
+  box-shadow: 0 0 5px #2b3945;
+  border-radius: 5px;
+  margin: 3rem 0;
+}
+.btn.borders-btn {
+  background-color: #2b3945;
+  padding: 0.25rem 2rem;
+  box-shadow: 0 0 5px rgba(43, 57, 69, 0.3);
+  border-radius: 5px;
+  font-size: 0.75rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  background-color: #2b3945;
+  padding: 1rem 4.5rem;
+  border-bottom: 3.5px solid #111517;
+}
+
+.country-page {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 4.5rem;
+}
+.country-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  width: 100%;
+}
+
+.nav-logo {
+  font-weight: 800;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+}
+.nav-logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-theme-toggler {
+  font-weight: 600;
+}
+
+.theme-toggler-btn {
+  display: flex;
+  align-items: center;
+}
+.theme-toggler-btn svg {
+  margin-right: 0.5rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: none;
+  padding: 3rem 4.5rem;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  width: 100%;
+}
+
+.search-form {
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+}
+.search-form svg {
+  position: absolute;
+  color: #2b3945;
+  left: 1.1rem;
+  top: 28%;
+}
+
+.country-list {
+  padding: 1rem 4.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(350px, auto);
+  grid-gap: 3rem;
+}
+
+.country-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #2b3945;
+  border-radius: 5px;
+  box-shadow: 0 2px 7px #111517;
+}
+
+.card-header {
+  width: 100%;
+  overflow: hidden;
+}
+.card-header img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  aspect-ratio: 3/2;
+  width: 100%;
+}
+
+.card-body {
+  height: 50%;
+  padding: 1rem 1.5rem 2rem;
+}
+
+.country-content {
+  display: flex;
+  align-items: center;
+}
+.country-content .country-image {
+  flex-shrink: 0;
+}
+.country-content .country-image img {
+  width: clamp(300px, 35vw, 600px);
+  border-radius: 0.5rem;
+}
+
+.country-description {
+  display: grid;
+  width: 100%;
+  padding-left: 5rem;
+  grid-template-areas: "title title" "left  right" "last  last";
+  grid-template-rows: 1fr 2fr 1.5fr;
+  grid-template-columns: 1fr 1fr;
+}
+.country-description__title {
+  grid-area: title;
+  font-weight: 800;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+.country-description__left {
+  grid-area: left;
+}
+.country-description__left > p:not(:last-of-type) {
+  margin-bottom: 0.5rem;
+}
+.country-description__right {
+  grid-area: right;
+}
+.country-description__right > p:not(:last-of-type) {
+  margin-bottom: 0.5rem;
+}
+.country-description__last {
+  grid-area: last;
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.country-description__last p {
+  flex-shrink: 0;
+}
+
+.country-description__borders {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6666666667rem;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 867px) {
+  .header {
+    height: 100px;
+    padding: 1.5rem 1rem;
+  }
+
+  .search {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .search-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-form {
+    margin-bottom: 2rem;
+  }
+
+  .country-page {
+    padding: 1.5rem 3rem;
+  }
+
+  .country-content {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .country-content .country-image img {
+    width: 100%;
+  }
+
+  .country-description {
+    padding-left: 0;
+  }
+  .country-description__title {
+    margin: 1.5rem 0;
+  }
+}
+@media screen and (max-width: 1100px) and (min-width: 867px) {
+  .country-content {
+    align-items: flex-start;
+  }
+
+  .country-description {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+  }
+  .country-description__left {
+    margin-bottom: 1.5rem;
+  }
+  .country-description__last {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .country-description__borders {
+    margin: 1rem 0 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .country-list {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 3rem;
+  }
+
+  .country-page {
+    padding: 1.5rem 2rem;
+  }
+
+  .country-content {
+    align-items: flex-start;
+  }
+
+  .country-description {
+    display: flex;
+    flex-direction: column;
+  }
+  .country-description__left {
+    margin-bottom: 1.5rem;
+  }
+  .country-description__last {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .country-description__borders {
+    margin: 1rem 0 2rem;
+  }
+}
+.filter-drop-down {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 225px;
+  justify-content: flex-end;
+}
+
+.drop-down-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.drop-down-list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 110%;
+  width: 100%;
+  background-color: #2b3945;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 7px #2b3945;
+  padding: 0.5rem 0;
+}
+.drop-down-list button {
+  text-align: left;
+  padding: 0.4rem 1.5rem;
+}
+.drop-down-list button:hover {
+  background-color: rgba(237, 237, 237, 0.5);
+}
+
+.btn.drop-down-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 7px #ededed;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  background-color: white;
+}
+.btn.drop-down-btn:hover {
+  background-color: rgba(237, 237, 237, 0.3);
+  outline: 2px solid #ededed;
+}
+.btn.drop-down-btn:focus {
+  outline: 2px solid #858585;
+  border-radius: 5px;
+}

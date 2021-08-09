@@ -1,0 +1,42 @@
+// * Colors
+
+// ? Light Theme Colors
+
+$dark: hsl(200, 15%, 8%);
+$dark-bg: hsl(207, 26%, 17%);
+$dark-input: hsl(209, 23%, 22%);
+
+// ? Dark Theme Colors
+
+$white: hsl(0, 0%, 100%);
+$light-bg: hsl(0, 0%, 98%);
+$light-gray: hsl(0, 0%, 93%);
+$light-input: hsl(0, 0%, 52%);
+
+// ? Light
+$bg-clr: hsl(0, 0%, 98%);
+$bg-clr-2: white;
+$text-clr: hsl(200, 15%, 8%);
+$input-clr: hsl(0, 0%, 52%);
+$border-clr: hsl(0, 0%, 93%);
+
+// ? Sizing
+
+$spacer: 1rem;
+$spacer-lg: $spacer * 3;
+
+$max-width: 1600px;
+
+// ? Font Sizes
+
+$font-size-base: 1rem;
+$font-size-base-xs: $font-size-base * 0.85;
+$font-size-base-sm: $font-size-base * 1.25;
+$font-size-base-md: $font-size-base * 1.5;
+$font-size-base-lg: $font-size-base * 3;
+
+// ? Shadow
+
+$shadow-base: 0 2px 7px $light-gray;
+$shadow-base-md: 0 0 5px rgba($light-input, 0.3);
+$shadow-base-lg: 0 0 5px $light-input;
